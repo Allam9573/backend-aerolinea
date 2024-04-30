@@ -19,7 +19,7 @@ import com.aerolinea.app.entities.Avion;
 import com.aerolinea.app.entities.dto.AvionDTO;
 import com.aerolinea.app.services.impl.AvionServiceImpl;
 
-@CrossOrigin(origins = "http://localhost:5174/")
+@CrossOrigin(origins = "https://mayan-airlines.netlify.app/")
 @RestController
 @RequestMapping("/api/aviones")
 public class AvionController {
