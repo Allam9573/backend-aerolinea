@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "cc7e9d83-a578-41b3-898c-1f7be21f4b41",
+		"name": "Aerolinea Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30783136"
+	},
+	"item": [
+		{
+			"name": "crear clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"kevin\",\r\n    \"telefono\":\"98473811\",\r\n    \"correo\":\"eliana@correo.com\",\r\n    \"direccion\":\"prados universitarios\",\r\n    \"nacionalidad\":\"hondureña\",\r\n    \"pasaporte\":\"en orden\",\r\n    \"clienteRegistrado\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/clientes/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/obtener",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"obtener"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener ventas Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/obtenerVentas/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"obtenerVentas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/buscar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"buscar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar por correo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/obtenerPorCorreo/usuario2@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"obtenerPorCorreo",
+						"usuario2@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Vin\",\r\n    \"telefono\":\"666\",\r\n    \"correo\":\"vin@correo.com\",\r\n    \"direccion\":\"prados universitarios\",\r\n    \"nacionalidad\":\"hondureña\",\r\n    \"pasaporte\":\"en orden\",\r\n    \"clienteRegistrado\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/clientes/actualizar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"actualizar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/eliminar?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"eliminar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
